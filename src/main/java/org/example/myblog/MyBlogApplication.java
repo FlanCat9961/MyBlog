@@ -7,7 +7,6 @@ import org.springframework.boot.jdbc.autoconfigure.DataSourceTransactionManagerA
 
 @SpringBootApplication
 public class MyBlogApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(MyBlogApplication.class, args);
 	}
