@@ -1,3 +1,10 @@
+/*
+ * 全局样式模块负责导入 Tailwind CSS 的 base、components 和 utilities 层。
+ * 这里定义了应用级别的 body 默认样式，保证不同浏览器下页面有一致的基础字体和边距。
+ * 当前项目主要依赖 Tailwind 原子类完成页面样式，因此这个文件应保持简洁。
+ * 如果后续增加主题系统，可以在这里放置 CSS 变量、主题色和基础排版规则。
+ * 业务页面的局部样式应优先写在对应组件中，避免全局样式污染。
+ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

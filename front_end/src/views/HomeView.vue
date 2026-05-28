@@ -1,3 +1,10 @@
+<!--
+  HomeView 是博客前台首页模块。
+  它负责展示搜索区、当前标签提示、文章列表、加载骨架屏、空状态和分页控件。
+  页面通过 articleStore 获取文章数据，并把搜索、标签过滤和分页事件委托给 store 处理。
+  点击文章卡片会跳转到文章详情页，点击标签则会更新当前标签筛选条件。
+  后续这个模块可以继续拆出 HeroSearch、ArticleCard 和 ArticlePagination 等组件，以提升复用性。
+-->
 <template>
   <div class="w-full">
     <!-- 动态渐变背景高亮搜索区 (Hero Section) -->

@@ -87,6 +87,7 @@ build/
 ### other ###
 application-dev.properties
 requirement.md
+.sisyphus/
 
 ### Node/Frontend ###
 # 依赖目录 (极其重要，绝对不能提交)
@@ -98,8 +99,19 @@ dist/
 dist-ssr/
 build/
 front_end/dist/
+*.tsbuildinfo
+front_end/*.tsbuildinfo
 
 # 本地环境变量文件
+.env
+.env.*
+!.env.example
+front_end/.env
+front_end/.env.*
+!front_end/.env.example
+back_end/.env
+back_end/.env.*
+!back_end/.env.example
 .env.local
 .env.*.local
 
@@ -111,3 +123,5 @@ pnpm-debug.log*
 
 # 操作系统文件
 .DS_Store
+
+docs/project-module-comments.md

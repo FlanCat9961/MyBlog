@@ -1,3 +1,10 @@
+<!--
+  AboutView 是博客前台关于页面模块。
+  它用于展示博主简介、技术栈和联系方式，是个人博客中常见的静态内容页面。
+  当前内容直接写在 Vue 模板中，适合 V0.1 阶段快速展示。
+  后续框架化时，可以把这类页面改成 Markdown 或站点配置驱动，方便不同使用者替换内容。
+  这个模块不应该承载文章列表、登录鉴权或后台管理逻辑，只负责关于页面本身的展示。
+-->
 <template>
   <div class="max-w-4xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12">
     <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">

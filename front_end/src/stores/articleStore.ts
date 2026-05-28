@@ -1,3 +1,10 @@
+/**
+ * 文章状态模块使用 Pinia 管理文章列表、文章详情和查询条件。
+ * 它把页面组件中的加载状态、分页参数、当前标签和搜索关键字集中到一个可复用 store 中。
+ * HomeView 主要依赖列表状态，ArticleView 主要依赖 currentArticle 和 detailLoading。
+ * 这种结构可以减少组件之间的重复请求逻辑，让页面更专注于展示和交互。
+ * 后续如果文章模块继续扩展，可以在这里增加草稿、发布状态、缓存策略和错误提示状态。
+ */
 import { defineStore } from 'pinia';
 import { getArticles, getArticleById } from '../api/article';
 import { Article } from '../mock/articles';
